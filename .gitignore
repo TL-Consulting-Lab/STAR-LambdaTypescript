@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+.build/
+*.zip
+function.zip
+
+# Serverless
+.serverless/
+
+# Testing
+coverage/
+
+# Environment
+.env
+.env.*
+
+# IDE and OS specific files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test outputs
+response.json
+
+# Development notes
+prompts.md

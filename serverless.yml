@@ -1,0 +1,29 @@
+service: text-reverser-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-east-1
+
+package:
+  patterns:
+    - '!node_modules/serverless-plugin-typescript/**'
+    - '!node_modules/**'
+    - 'dist/**'
+
+plugins:
+  - serverless-offline
+
+functions:
+  reverseText:
+    handler: dist/index.handler
+    events:
+      - http:
+          path: reverse
+          method: post
+          cors: true
+      - http:
+          path: reverse
+          method: get
+          cors: true
