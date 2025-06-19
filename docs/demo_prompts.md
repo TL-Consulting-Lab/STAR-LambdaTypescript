@@ -10,6 +10,9 @@ Check if the Lambda function text-reverser-api-dev-reverseText is deployed and r
 ```
 
 ## Prompt 3: Fetch the API
+```
+Fetch the Production API URL
+```
 
 ## Prompt 4: Add Count words and characters in the input text functionality 
 ```
